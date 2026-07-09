@@ -1,6 +1,6 @@
 # Kolla-Ansible All-in-One 자동 구축
 
-Ubuntu Server 24.04 LTS 환경에서 Kolla-Ansible 기반 OpenStack All-in-One을 자동으로 배포하는 스크립트 모음입니다. `git clone` 후 `config.env`만 수정하고 실행하면 배포부터 CSPM 실습 리소스 생성까지 자동으로 진행됩니다.
+Ubuntu Server 24.04 LTS 환경에서 Kolla-Ansible 기반 OpenStack All-in-One을 자동으로 배포하는 스크립트 모음입니다. `git clone` 후 `config.env`만 수정하고 실행하면 배포부터 인스턴스 생성까지 자동으로 진행됩니다.
 
 ## 사전 조건 (직접 해야 하는 것)
 
@@ -32,7 +32,7 @@ bash setup.sh
 
 배포가 끝나면 마지막에 Horizon 주소와 admin 비밀번호가 출력됩니다.
 
-CSPM 실습용 리소스(네트워크, 라우터, CirrOS 인스턴스, Floating IP, 취약 SG 룰)까지 만들려면:
+실습용 리소스(네트워크, 라우터, CirrOS 인스턴스, Floating IP, 취약 SG 룰)까지 만들려면:
 
 ```bash
 bash scripts/03-resources.sh
