@@ -53,7 +53,7 @@ bash scripts/03-resources.sh
 
 - NIC 검증: 관리망에 IP 있는지, 외부망에 IP 없는지 자동 확인 후 진행
 - KVM 자동 감지: `/dev/kvm` 존재 여부에 따라 `nova_compute_virt_type`을 `kvm`/`qemu` 자동 설정
-- `globals.yml` 멱등 처리: 마커 블록(`APS-CSPM-AUTO`) 기반으로 재실행해도 중복 없이 갱신
+- `globals.yml` 멱등 처리: 마커 블록(`AUTO`) 기반으로 재실행해도 중복 없이 갱신
 - physnet 자동 확인: `ml2_conf.ini`의 `flat_networks` 값을 읽어 Provider Network 생성에 사용
 - 리소스 멱등 생성: 이미 존재하는 네트워크/인스턴스는 건너뛰므로 재실행 안전
 - prechecks에는 `--use-test-images` 사용, deploy에는 미사용 (문서 규칙 유지)
