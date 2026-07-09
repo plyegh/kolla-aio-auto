@@ -1,4 +1,4 @@
-# APS-CSPM Kolla-Ansible All-in-One 자동 구축
+# Kolla-Ansible All-in-One 자동 구축
 
 Ubuntu Server 24.04 LTS 환경에서 Kolla-Ansible 기반 OpenStack All-in-One을 자동으로 배포하는 스크립트 모음입니다. `git clone` 후 `config.env`만 수정하고 실행하면 배포부터 CSPM 실습 리소스 생성까지 자동으로 진행됩니다.
 
