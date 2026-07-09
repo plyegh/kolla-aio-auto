@@ -161,5 +161,4 @@ openstack server list
 openstack floating ip list
 log ""
 log "SSH 테스트:  ssh cirros@${FIP}   (PW: gocubsgo)"
-log "CSPM 탐지 대상: SG-001, SG-ICMP-001, FIP-002, RTR-001, NET-001, VM-001, EXP-001"
 log "=============================================="
